@@ -1,27 +1,141 @@
 @font-face {
-    font-family: 'Halenoir';
-    src: url('Halenoir/HalenoirExpanded-DemiBold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Halenoir-ExtraBold';
-    src: url('Halenoir/HalenoirExpanded-ExtraBold.otf') format('opentype');
+    font-family: 'gotham';
+    src: url('./Gothamblack/Gotham\ Black.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 
-/* Aplicar la fuente a todo el sitio */
+.titulo-principal {
+    font-family: 'gotham', sans-serif;
+}
 
-h1 {
-    font-family: 'Halenoir', sans-serif;
+a {
+    text-decoration: none;
+}
+
+h1,
+h3 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+
+.btn-informacion {
+    background-color: blueviolet;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.btn-informacion:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.btn-registrarse {
+    background-color: #00FFA3;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.btn-registrarse:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+.text-secondary,
+p {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
 
-.vega-artistas-h1 {
-    font-size: 50px;
-    font-family: 'Halenoir-ExtraBold', sans-serif;
-    font-weight: bolder;
+/* Estilos para el marquee infinito */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    width: 200%;
+    /* Doble ancho para contener el contenido duplicado */
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+    width: 50%;
+    /* Mitad del ancho total */
+}
+
+.marquee img {
+    height: 27px;
+    margin: 0 2rem;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/*  ****************************************** SECTION 3 *************************************** */
+
+#texto-dorado {
+    background: linear-gradient(180deg, #FFD000 0%, #997D00 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+#texto-verde {
+    background: linear-gradient(180deg, #00FFA3 0%, #028757 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+/*  **************************************** SECTION 4 ************************************* */
+
+#btn-ver  {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border: none;
+}
+
+#btn-ver:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
