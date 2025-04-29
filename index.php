@@ -61,8 +61,8 @@
 
                         <!-- Botones de acción -->
                         <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0">
-                            <button class="btn btn-outline-light rounded-pill p-2 px-4">Iniciar sesión</button>
-                            <button class="btn btn-warning rounded-pill p-2 px-4">Registrarse</button>
+                            <a href="http://localhost/vega-distributions/views/login/" class="btn btn-outline-light rounded-pill p-2 px-4">Iniciar sesión</a>
+                            <a href="http://localhost/vega-distributions/views/signup/" class="btn btn-warning rounded-pill p-2 px-4">Registrarse</a>
                         </div>
 
                     </div>
@@ -135,6 +135,10 @@
                             Expande tu música en plataformas como Spotify, Apple Music, TikTok, YouTube y más. <br>
                             Llega a un público global con distribución ilimitada.
                         </p>
+                        <div class="d-flex flex-column align-items-center "> <!-- Cambiado a flex-column -->
+                            <img src="./images/icons/SLY2.png" width="300" alt="" class="img-fluid">
+                            <a href="#planes" class="btn btn-blanco mx-5">Ver Planes</a> <!-- Botón mejorado -->
+                        </div>
                     </div>
                 </div>
             </div>
