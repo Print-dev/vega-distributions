@@ -71,13 +71,13 @@
         </nav>
 
         <div class="p-5 text-center bg-image d-flex align-items-center justify-content-center" style="
-    background-image: url('./images/secciones/PT1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    min-height: 100vh;
-">
+                background: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.800)),url('./images/secciones/PT1.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: white;
+                min-height: 100vh;
+            ">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8 text-start">
@@ -110,8 +110,18 @@
                                 <img src="https://freelogopng.com/images/all_img/1656504144youtube-logo-png-white.png"
                                     alt="YouTube" height="40">
                                 <img src="./images/tidal-logo.png" alt="Tidal" height="40">
-                                <img src="./images/tiktok-logo.png" alt="TikTok" height="40">
-                                <img src="./images/deezer-logo.png" alt="Deezer" height="40">
+                                <!--                                 <img src="./images/tiktok-logo.png" alt="TikTok" height="40">
+ --> <img src="./images/deezer-logo.png" alt="Deezer" height="40">
+                                <img src="./images/amazon-logo.png" alt="Amazon Music" height="40">
+                                <img src="./images/applemusic-logo.png" alt="Apple Music" height="40">
+                                <img src="./images/spotify-logo.png" alt="Spotify" height="40">
+                            </div>
+                            <div class="marquee-content d-flex gap-4 align-items-center">
+                                <img src="https://freelogopng.com/images/all_img/1656504144youtube-logo-png-white.png"
+                                    alt="YouTube" height="40">
+                                <img src="./images/tidal-logo.png" alt="Tidal" height="40">
+                                <!--                                 <img src="./images/tiktok-logo.png" alt="TikTok" height="40">
+ --> <img src="./images/deezer-logo.png" alt="Deezer" height="40">
                                 <img src="./images/amazon-logo.png" alt="Amazon Music" height="40">
                                 <img src="./images/applemusic-logo.png" alt="Apple Music" height="40">
                                 <img src="./images/spotify-logo.png" alt="Spotify" height="40">
@@ -246,7 +256,7 @@
                 <div class="row align-items-center gy-5 py-5">
                     <div class="col-12 col-md-6">
                         <h1 class="fw-bold text-start" style="font-size: clamp(30px, 6vw, 60px); font-weight: 100;">
-                            <span id="texto-verde">Sube</span> y gana
+                            <span id="texto-dorado">Sube</span> y gana
                         </h1>
                         <p class="fs-5 text-start" style="font-size: clamp(14px, 2.5vw, 18px);">
                             Ya seas un artista experimentado o estés dando tus primeros pasos,
@@ -260,7 +270,7 @@
                             Nunca fue tan sencillo compartir tu música con el mundo.
                         </p>
                         <div class="text-start">
-                            <a href="#" class="btn btn-registrarse">Registrarse</a>
+                            <a href="#" class="btn btn-informacion">Registrarse</a>
                         </div>
                     </div>
 
@@ -422,15 +432,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script>
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', () => {
-            const htmlElement = document.documentElement;
-            const currentTheme = htmlElement.getAttribute('data-bs-theme');
-            htmlElement.setAttribute('data-bs-theme', currentTheme === 'light' ? 'dark' : 'light');
-            themeToggle.textContent = currentTheme === 'light' ? '☀️' : '🌙';
-        });
-    </script> -->
 
 </body>
 
