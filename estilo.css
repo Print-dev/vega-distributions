@@ -14,11 +14,22 @@ a {
     text-decoration: none;
 }
 
+li:hover{
+    text-decoration: underline;
+}
+
 h1,
 h3 {
     font-family: 'Archivo Black', sans-serif;
 }
 
+.navbar{
+    background-color: #00000063;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(8px); /* Añade el efecto de blur */
+    -webkit-backdrop-filter: blur(8px); /* Compatibilidad con navegadores WebKit */
+}
 
 .btn-informacion {
     background-color: black;
@@ -26,7 +37,7 @@ h3 {
     border: 1px #FFD000 solid;
     width: 60%;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 0px;
     font-size: 15px;
     font-weight: 100;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,28 +45,50 @@ h3 {
 }
 
 .btn-informacion:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    -webkit-box-shadow: 0px 10px 13px -7px #FFD000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #FFD000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     background-color: #FFD000;
+    color: black;
+    -webkit-box-shadow: 5px 5px 0px 0px #ffe15c, 10px 10px 0px 0px #ffeb93, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #ffe15c, 10px 10px 0px 0px #ffeb93, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .btn-registrarse {
-    background-color: #00FFA3;
+    background-color: #fae62d;
     color: rgb(0, 0, 0);
     margin-top: 20px;
     width: 50%;
-    border-radius: 20px;
+    border-radius: 0px;
     font-size: 15px;
     font-weight: 100;
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
+    transition: all ease 0.2s;
+
 }
 
 .btn-registrarse:hover {
     background-color: rgb(255, 255, 255);
     color: black;
+    transform: translateY(10px);
+
+}
+
+.btn-iniciar {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 0px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    transition: all ease 0.2s;
+}
+
+.btn-iniciar:hover {
+    background-color: #ffffff;
+    color: black;
+    transform: translateY(10px);
 }
 
 .btn-blanco {
@@ -76,6 +109,7 @@ h3 {
     border: 1px #FFD000 solid;
 }
 
+
 .text-secondary,
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -86,7 +120,10 @@ p {
 .marquee-container {
     width: 100%;
     overflow: hidden;
-    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;    
+    backdrop-filter: blur(8px); /* Añade el efecto de blur */
+    -webkit-backdrop-filter: blur(8px); /* Compatibilidad con navegadores WebKit */
 }
 
 .marquee {
@@ -100,7 +137,7 @@ p {
     gap: 4.8rem;
     width: max-content;
     align-items: center;
-    animation: scroll 5s linear infinite;
+    animation: scroll 25s linear infinite;
     white-space: nowrap;
     transform: translateX(-50%);
 }
