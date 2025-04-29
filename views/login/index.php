@@ -28,7 +28,7 @@
                         <input type="password" class="form-control" id="password" required>
                     </div>
 
-                    <button class="w-100 btn btn-primary btn-lg mb-3" type="submit">CONTINUAR</button>
+                    <a href="http://localhost/vega-distributions/views/home/" class="w-100 btn btn-primary btn-lg mb-3" type="submit">CONTINUAR</a>
 
                     <div class="text-center mb-3">
                         <a href="#" class="text-decoration-none">¿Has olvidado tu contraseña?</a>
