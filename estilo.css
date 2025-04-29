@@ -62,7 +62,7 @@ h3 {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     margin-top: 20px;
-    width: 50%;
+    width: 30%;
     border-radius: 20px;
     font-size: 15px;
     font-weight: 100;
@@ -82,32 +82,37 @@ p {
     font-weight: bolder;
 }
 
-/* Estilos para el marquee infinito */
+/* Estilos para el marquee infinito - versión mejorada */
 .marquee-container {
     width: 100%;
     overflow: hidden;
-    border-radius: 10px;
-    position: relative;
+    padding: 20px 0;
 }
 
 .marquee {
     display: flex;
-    width: 200%;
-    /* Doble ancho para contener el contenido duplicado */
+    width: 100%;
+    overflow: hidden;
 }
 
 .marquee-content {
     display: flex;
+    gap: 4.8rem;
+    width: max-content;
     align-items: center;
-    animation: scroll 10s linear infinite;
-    width: 50%;
-    /* Mitad del ancho total */
+    animation: scroll 5s linear infinite;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.marquee-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 30px;
 }
 
 .marquee img {
     height: 27px;
-    width: min-content;
-    margin: 0 2rem;
     filter: brightness(0) invert(1);
     cursor: pointer;
 }
@@ -118,7 +123,7 @@ p {
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-51%);
     }
 }
 
