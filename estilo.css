@@ -5,13 +5,26 @@
     font-style: normal;
 }
 
+@import url(https://db.onlinewebfonts.com/c/33de8d5082cbf442b56616dc045100d9?family=Rund+Display+Black);
+
 
 .titulo-principal {
     font-family: 'gotham', sans-serif;
 }
 
 a {
+    font-family: "Outfit", sans-serif;
     text-decoration: none;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+
+}
+
+.ls-wide {
+    letter-spacing: 1px;
+    /* Puedes ajustar el valor */
 }
 
 .nav-item {
@@ -32,11 +45,16 @@ a {
 
 .nav-item:hover::after {
     width: 100%;
+    font-weight: 300;
 }
 
-h1,
+h1 {
+    font-family: 'gotham', 'sans-serif';
+    font-weight: bolder;
+}
+
 h3 {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .navbar {
@@ -58,7 +76,7 @@ h3 {
     border-radius: 0px;
     font-size: 15px;
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'gotham', 'sans-serif';
     font-size: larger;
 }
 
@@ -76,7 +94,7 @@ h3 {
     border-radius: 0px;
     font-size: 15px;
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: larger;
     transition: all ease 0.2s;
 
@@ -96,7 +114,7 @@ h3 {
     border-radius: 0px;
     font-size: 15px;
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: larger;
     transition: all ease 0.2s;
 }
@@ -114,7 +132,7 @@ h3 {
     border-radius: 20px;
     font-size: 15px;
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: larger;
 }
 
@@ -125,11 +143,6 @@ h3 {
 }
 
 
-.text-secondary,
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-}
 
 /* Estilos para el marquee infinito - versión mejorada */
 .marquee-container {
@@ -246,7 +259,8 @@ p {
 
 @media (max-width: 576px) {
     .seccion-ajustable {
-        min-height: 80vh; /* Altura reducida en pantallas muy pequeñas */
+        min-height: 80vh;
+        /* Altura reducida en pantallas muy pequeñas */
     }
 }
 
@@ -258,4 +272,25 @@ p {
     background-repeat: no-repeat;
     background-attachment: scroll;
     /* Esto ayuda en dispositivos móviles */
+}
+
+.card-title{
+    font-family: "Outfit", sans-serif;
+
+}
+
+.btn-warning{
+    background-color: #F2CE1B;
+    color: rgb(0, 0, 0);
+    width: 50%;
+    border-radius: 0px;
+    font-family: "Outfit", sans-serif;
+    transition: all ease 0.2s;
+}
+
+.btn-warning:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transform: translateY(10px);
+
 }
