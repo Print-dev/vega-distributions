@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-li:hover{
+nav-link:hover{
     text-decoration: underline;
 }
 
@@ -52,7 +52,7 @@ h3 {
 }
 
 .btn-registrarse {
-    background-color: #fae62d;
+    background-color: #F2CE1B;
     color: rgb(0, 0, 0);
     margin-top: 20px;
     width: 50%;
@@ -137,7 +137,7 @@ p {
     gap: 4.8rem;
     width: max-content;
     align-items: center;
-    animation: scroll 25s linear infinite;
+    animation: scroll 50s linear infinite;
     white-space: nowrap;
     transform: translateX(-50%);
 }
@@ -169,19 +169,15 @@ p {
 /*  ****************************************** SECTION 3 *************************************** */
 
 #texto-dorado {
-    background: linear-gradient(180deg, #FFD000 0%, #997D00 70%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #F2CE1B;
 
+    
 }
 
 #texto-verde {
-    background: linear-gradient(180deg, #00FFA3 0%, #028757 70%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #F2CE1B;
 
+    
 }
 
 /*  **************************************** SECTION 4 ************************************* */
@@ -202,4 +198,13 @@ p {
 #btn-ver:hover {
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-brand img{
+        width: 45px;
+        display: flex;
+        margin-left: 5px;
+    }
 }
