@@ -79,29 +79,27 @@
         </nav>
     </section>
 
-    <section class="d-flex flex-column justify-content-between text-white seccion-ajustable" style="
-    min-height: 100vh;
-    background-image: url('./images/secciones/PT1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;">
+    <section class="d-flex flex-column justify-content-between text-white seccion-ajustable">
         <!-- Contenido principal -->
         <div class="container my-auto py-5">
             <div class="row">
-                <div class="col-12 col-md-8 text-start" style="margin-top: 100px;">
-                    <h1 class="fw-bold display-4">
+                <div class="col-12 col-md-8 text-center text-md-start mt-5 px-3 d-flex flex-column align-items-center align-items-md-start">
+                    <h1 class="fw-bold mb-3" style="font-size: clamp(32px, 7vw, 70px); line-height: 1.2;">
                         Que tu <br>
                         música <br>
                         se escuche en <br>
                         todas partes.
                     </h1>
-                    <h3 class="text-secondary fs-4 fw-bold">
+                    <h3 class="text-secondary fw-bold mb-4" style="font-size: clamp(16px, 3vw, 24px);">
                         Sube tu música a todas las plataformas
                     </h3>
-                    <div class="d-flex justify-content-start align-items-start mt-3 gap-3">
-                        <button class="btn btn-informacion"><span class="fw-bold">Más información</span></button>
+                    <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 w-100">
+                        <button class="btn btn-informacion fw-bold px-4 py-3" style="font-size: clamp(16px, 3vw, 20px);">
+                            Más información
+                        </button>
                     </div>
                 </div>
+                
             </div>
         </div>
         <div class="text-center mb-5">
@@ -198,17 +196,22 @@
 
     <section style="background-color: #000000;">
 
-        <div class="col-12 text-center py-5 p-5">
-            <h1 class="fw-bold text-white" style="font-size: 40px; font-weight: 300;">Suscripción desde S/ 0.00</h1>
-            <p class="fs-5 text-white">
+        <div class="col-12 text-center py-5 px-3"> <!-- Usamos px-3 para padding horizontal en mobile -->
+            <h1 class="fw-bold text-white mb-3" style="font-size: clamp(28px, 5vw, 50px); font-weight: 300;">
+                Suscripción desde S/ 0.00
+            </h1>
+            <p class="text-white mb-4" style="font-size: clamp(14px, 2.5vw, 20px);">
                 Expande tu música en plataformas como Spotify, Apple Music, TikTok, YouTube y más.
-                Llega a un público <br> global con distribución ilimitada.
+                Llega a un público global con distribución ilimitada.
             </p>
-            <div class="d-flex flex-column align-items-center "> <!-- Cambiado a flex-column -->
-                <img src="./images/icons/SLY2.png" width="300" alt="" class="img-fluid">
-                <a href="#planes" class="btn btn-blanco fw-bold">Ver Planes</a> <!-- Botón mejorado -->
+            <div class="d-flex flex-column align-items-center gap-3">
+                <img src="./images/icons/SLY2.png" width="300" alt="Logo SLY" class="img-fluid">
+                <a href="#planes" class="btn btn-blanco fw-bold px-4 py-2" style="font-size: clamp(14px, 2vw, 18px);">
+                    Ver Planes
+                </a>
             </div>
         </div>
+
     </section>
 
     <section id="vendemusica">
