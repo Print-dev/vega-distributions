@@ -14,8 +14,24 @@ a {
     text-decoration: none;
 }
 
-nav-link:hover{
-    text-decoration: underline;
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
 }
 
 h1,
@@ -23,12 +39,14 @@ h3 {
     font-family: 'Archivo Black', sans-serif;
 }
 
-.navbar{
-    background-color: #00000063;
+.navbar {
+    background-color: #000000;
     position: fixed;
     width: 100%;
-    backdrop-filter: blur(8px); /* Añade el efecto de blur */
-    -webkit-backdrop-filter: blur(8px); /* Compatibilidad con navegadores WebKit */
+    backdrop-filter: blur(8px);
+    /* Añade el efecto de blur */
+    -webkit-backdrop-filter: blur(8px);
+    /* Compatibilidad con navegadores WebKit */
 }
 
 .btn-informacion {
@@ -47,14 +65,13 @@ h3 {
 .btn-informacion:hover {
     background-color: #FFD000;
     color: black;
-    -webkit-box-shadow: 5px 5px 0px 0px #ffe15c, 10px 10px 0px 0px #ffeb93, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 5px 5px 0px 0px #ffe15c, 10px 10px 0px 0px #ffeb93, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: 5px 5px 0px 0px #ffe15c, 10px 10px 0px 0px #ffeb93, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 0px 0px #ffe15c, 10px 10px 0px 0px #ffeb93, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .btn-registrarse {
     background-color: #F2CE1B;
     color: rgb(0, 0, 0);
-    margin-top: 20px;
     width: 50%;
     border-radius: 0px;
     font-size: 15px;
@@ -75,7 +92,6 @@ h3 {
 .btn-iniciar {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    margin-top: 20px;
     width: 50%;
     border-radius: 0px;
     font-size: 15px;
@@ -95,7 +111,6 @@ h3 {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     margin-top: 20px;
-    width: 30%;
     border-radius: 20px;
     font-size: 15px;
     font-weight: 100;
@@ -121,9 +136,11 @@ p {
     width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 0;    
-    backdrop-filter: blur(8px); /* Añade el efecto de blur */
-    -webkit-backdrop-filter: blur(8px); /* Compatibilidad con navegadores WebKit */
+    padding: 20px 0;
+    backdrop-filter: blur(8px);
+    /* Añade el efecto de blur */
+    -webkit-backdrop-filter: blur(8px);
+    /* Compatibilidad con navegadores WebKit */
 }
 
 .marquee {
@@ -171,13 +188,13 @@ p {
 #texto-dorado {
     color: #F2CE1B;
 
-    
+
 }
 
 #texto-verde {
     color: #F2CE1B;
 
-    
+
 }
 
 /*  **************************************** SECTION 4 ************************************* */
@@ -202,9 +219,43 @@ p {
 
 
 @media (max-width: 768px) {
-    .navbar-brand img{
+    .navbar-brand img {
         width: 45px;
         display: flex;
         margin-left: 5px;
     }
+
+    /*     #contenedor-navbar-resp{
+        ma-height: 10vh;
+    } */
+    .seccion-ajustable {
+        background-position: left center;
+        /* Ajusta la posición en móviles */
+
+    }
+
+    .seccion-ajustable h1 {
+        font-size: 2.5rem;
+        /* Texto más pequeño en móviles */
+    }
+
+    .seccion-ajustable h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .seccion-ajustable {
+        min-height: 80vh; /* Altura reducida en pantallas muy pequeñas */
+    }
+}
+
+.seccion-ajustable {
+    min-height: 100vh;
+    background-image: url('./images/secciones/PT1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* Esto ayuda en dispositivos móviles */
 }
