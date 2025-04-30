@@ -274,12 +274,12 @@ h3 {
     /* Esto ayuda en dispositivos móviles */
 }
 
-.card-title{
+.card-title {
     font-family: "Outfit", sans-serif;
 
 }
 
-.btn-warning{
+.btn-warning {
     background-color: #F2CE1B;
     color: rgb(0, 0, 0);
     width: 50%;
@@ -293,4 +293,23 @@ h3 {
     color: rgb(255, 255, 255);
     transform: translateY(10px);
 
+}
+
+/*  ********************************* swiper container ******************************* */
+.swiper-card-container {
+    width: 200px;
+    height: 320px;
+}
+
+.swiper-card-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.75);
 }
